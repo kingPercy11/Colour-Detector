@@ -5,6 +5,7 @@ import numpy as np
 def color_detection(image_path):
     image = cv2.imread(image_path)
     hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
+    #mask of hsv values
     lower_hue = int(input("Enter lower hue value (0-179): "))
     upper_hue = int(input("Enter upper hue value (0-179): "))
     lower_saturation = int(input("Enter lower saturation value (0-255): "))
